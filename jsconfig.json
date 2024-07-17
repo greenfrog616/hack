@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "target": "ES2020",
+    "jsx": "react",
+    "allowImportingTsExtensions": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "paths": {
+      "src": ["./src/*"],
+      "@/*": ["./src/*"],
+      "@/components/*": ["src/components/*"],
+      "@/hooks/*": ["src/hooks/*"],
+      "@constant": ["src/constant/*"],
+      "@queries": ["src/queries/*"],
+      "@repositories": ["src/repositories/*"],
+      "@config": ["src/config/*"],
+      "@/libs": ["src/libs/*"]
+    }
+  },
+  "exclude": ["node_modules", "**/node_modules/*"]
+}
